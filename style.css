@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Luckiest Guy", sans-serif;
+  color: #ddd;
+}
+nav {
+  padding: 12px 54px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e03131;
+}
+ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 20px;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+h2 {
+  font-size: 32px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  padding: 12px 24px;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  gap: 12px;
+  /* justify-items: center;
+  align-items: center; */
+}
+.result {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+}
+.choise {
+  color: #fff;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.choise-1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #e03131;
+}
+.choise-2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #5f3dc4;
+}
+.choise-3 {
+  grid-column: 2/3;
+  grid-row: 3/3;
+  background-color: #2b8a3e;
+}
+span {
+  letter-spacing: 10px;
+}
+.first {
+  color: #e03131;
+}
+.plus {
+  color: #5c940d;
+}
+.second {
+  color: #e67700;
+}
+.equal {
+  color: #d9480f;
+}
+.question {
+  color: #862e9c;
+}
